@@ -1,41 +1,76 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <head>
-    <title>Dice Roller</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Your description goes here">
-    <meta name="keywords" content="one, two, three">
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Calculate how much power and where your cells are located when using your ECO">
+	<title>ECO calculator</title>
+	<link rel="stylesheet" type="text/css" href="css/eco.css">
+</head>
 
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<body>
 
-    <!-- external CSS link -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width">
+<div class="topcontainer">
+	<div style="width: 200px; float:left; height:200px; margin:10px">
+		<img src="image/03_Nortek-logo_rgb.png"  alt=""/>
+	</div>	
+	<div style="width: 100px; float:left; height:100px;  margin:70px">
+		<img src="image/1.png" height="21" alt=""/>
+		<p> </p>
+		<img src="image/2.png" height="24" alt=""/>
+	</div>
+</div>
 
-  </head>
-  <body>
-    <div id="container">
-      <header>
-        <h1>Dice Roller</h1>
-      </header>
-      <section id="content">
-        <span class="dice dice-4" id="first-die"></span>
-        <span class="dice dice-3" id="second-die"></span>
-        <input id="roll-dice" type="button" value="Roll the Dice">
-      </section>
-    </div><!-- #container -->
-    <script type="text/javascript" src="js/app.js"></script>
-    <script
-          src="https://code.jquery.com/jquery-3.4.1.min.js"
-          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-          crossorigin="anonymous">
-        </script>
+<div class="largecontainer">
+	<div class="corecontainer">
+		<img src="image/ECO-Battery-illustration.png"   alt=""/>	
+	</div>		
+	
+	<div class="interactioncontainer">
+	
+		<div class="inputbox">
+			<h2> CONFIGURATION</h2>
+					
+      			<div>
+					<p class="boxtext"> ESTIMATE OF DEPTH (Meters)</p>
+					<input type="text" id="depth" value="20">
+					<input type="submit" value="Update" id="submit-btn1">
+				</div>
+				<div>
+					<p class="boxtext"> DEPLOYMENT PERIOD (Days)</p>
+					<input type="text" id="period" value="7">
+					<input type="submit" value="Update" id="submit-btn2">
+				</div>
+				<div>
+					<p class="boxtext"> MEASUREMENT INTERVAL (Minutes)</p>
+					<input type="text" id="frequency" value="10">
+					<input type="submit" value="Update" id="submit-btn3">
+				</div>
+		
+		</div>
 
 
-  </body>
+		<div class="showbox">
+			<h2> BATTERY CONSUMPTION</h2>
+			
+			<div class="showboxleft">
+				<p class="boxtext"> ESTIMATED USE:</p>
+		  		<img src="image/Blue-button-procent.png" alt=""/> 
+				<div class="resulttext"> 
+					<h1>40%</h1>
+				</div>
+			</div>
+			
+	
+			<div class="showboxright">				
+				<img src="image/ECO-battery.png" alt=""/>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+	
+
+</body>
 </html>
