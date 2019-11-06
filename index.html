@@ -12,7 +12,7 @@
 <div class="topcontainer">
 	<div style="width: 200px; float:left; height:200px; margin:10px">
 		<img src="image/03_Nortek-logo_rgb.png"  alt=""/>
-	</div>	
+	</div>
 	<div style="width: 100px; float:left; height:100px;  margin:70px">
 		<img src="image/1.png" height="21" alt=""/>
 		<p> </p>
@@ -22,14 +22,14 @@
 
 <div class="largecontainer">
 	<div class="corecontainer">
-		<img src="image/ECO-Battery-illustration.png"   alt=""/>	
-	</div>		
-	
+		<img src="image/ECO-Battery-illustration.png"   alt=""/>
+	</div>
+
 	<div class="interactioncontainer">
-	
+
 		<div class="inputbox">
 			<h2> CONFIGURATION</h2>
-					
+
       			<div>
 					<p class="boxtext"> ESTIMATE OF DEPTH (Meters)</p>
 					<input type="text" id="depth" value="20">
@@ -37,40 +37,40 @@
 				</div>
 				<div>
 					<p class="boxtext"> DEPLOYMENT PERIOD (Days)</p>
-					<input type="text" id="period" value="7">
+					<input type="text" id="period" value="4">
 					<input type="submit" value="Update" id="submit-btn2">
 				</div>
 				<div>
 					<p class="boxtext"> MEASUREMENT INTERVAL (Minutes)</p>
-					<input type="text" id="frequency" value="10">
+					<input type="text" id="interval" value="10">
 					<input type="submit" value="Update" id="submit-btn3">
 				</div>
-		
+
 		</div>
 
 
 		<div class="showbox">
 			<h2> BATTERY CONSUMPTION</h2>
-			
+
 			<div class="showboxleft">
 				<p class="boxtext"> ESTIMATED USE:</p>
-		  		<img src="image/Blue-button-procent.png" alt=""/> 
-				<div class="resulttext"> 
-					<h1>40%</h1>
+		  		<img src="image/Blue-button-procent.png" alt=""/>
+				<div class="resulttext">
+					 <h1 id=result>20% </h1>
 				</div>
 			</div>
-			
-	
-			<div class="showboxright">				
-				<img src="image/ECO-battery.png" alt=""/>
+
+			<div class="showboxright">
+				<img id=battery src="image/ECO-battery-4.png" alt="Battery"/>
 			</div>
 		</div>
 	</div>
 
 </div>
 
-
-	
-
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+	 integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	 crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
