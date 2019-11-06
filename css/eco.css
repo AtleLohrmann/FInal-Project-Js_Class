@@ -19,11 +19,40 @@
 
 
 .corecontainer {
+  position: relative;
   width: 950px;
 	height: 520px;
 	margin: auto auto;
   padding: 18px 12px;
   background-color: white;
+}
+
+.cellcontainer1 {
+  position: absolute;
+  top: 350px;
+	left: 245px;
+  padding: 18px 12px;
+}
+
+.cellcontainer2 {
+  position: absolute;
+  top: 400px;
+	left: 245px;
+  padding: 18px 12px;
+}
+
+.cellcontainer3 {
+  position: absolute;
+  top: 450px;
+	left: 245px;
+  padding: 18px 12px;
+}
+
+.cellcontainer4 {
+  position: absolute;
+  top: 500px;
+	left: 245px;
+  padding: 18px 12px;
 }
 
 
